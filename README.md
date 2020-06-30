@@ -44,8 +44,17 @@ The start command should open a tab in your browser at http://localhost:3000/
 #### Enjoy
 
 ### Tech Review of Pagination Component
+Issues -
 1. Need to add previous page icon in pagination
-2. The message always shows 10 of 125 results on each page we select.
-   We can change this behaviour by adding textbox for selecting number of results and label will show 11 to 20 results on selection of 2nd page.
-   
 
+2. Total number of results shoud be input.
+
+3. User will not know total number of pages.
+
+4. There should be icon of continuation range. Like, if user is on 5th page. Page ranges should display as "... 4 5 6 ..."
+   
+Assumption - 
+1. Lets suppose total results are 100, and page size is 10. And currently user is on 10th 7th page. If he/she changes pagesize, default behavior should be -
+user should be returned 1st page.
+
+2. Default pagesize is 10.

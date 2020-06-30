@@ -1,32 +1,22 @@
 
 ### Purpose  
 
-This component use to display any type of rating of on UI. This is a progress bar which will display respected rating on the progress bar.
+This component use to display any type of rating of on UI. This is a progress bar which will display respected rating on the progress bar.  
 
-  
-
-This component requires two inputs as label for the progress bar and rating number should be displayed on UI.
-
-  
+This component requires two inputs as label for the progress bar and rating number should be displayed on UI.  
 
 ### Development
-
-  
 
 The component will comply to the [Custom Elements specification](https://w3c.github.io/webcomponents/spec/custom/  "https://w3c.github.io/webcomponents/spec/custom/").
 
   
 
-### Constructor
+### Constructor  
 
-  
+To create the custom web component, extend LitElement. The Web Component syntax is:  
 
-To create the custom web component, extend LitElement. The Web Component syntax is:
-
-  
-
-    @customElement('orxe-rating-component')
-    export default class OrxeRatingComponent extends LitElement {
+    @customElement('orxe-rating-bar')
+    export default class OrxeRatingBar extends LitElement {
     ...
     }
 
@@ -100,10 +90,6 @@ For Rating bar no keyboard support or events are provided.
 
 To use the element: 
 
-    <orxe-rating-component  label="Rating"  rating="75"  style="--font-family:san-serif;"></orxe-rating-component>
-
-  
-
-  
+    <orxe-rating-bar  label="Rating"  rating="75"  style="--font-family:san-serif;"></orxe-rating-bar>  
 
 ### Reference Material
